@@ -25,11 +25,14 @@ def character_die():
 
 
 while(1):
-    character_walk()
+    img.draw(400, 300)
+    update_canvas()
     delay(1)
-    character_attack_1()
-    delay(1)
-    character_attack_2()
-    delay(1)
-    character_die()
-    delay(1)
+    # character_walk()
+    # delay(1)
+    # character_attack_1()
+    # delay(1)
+    # character_attack_2()
+    # delay(1)
+    # character_die()
+    # delay(1)
