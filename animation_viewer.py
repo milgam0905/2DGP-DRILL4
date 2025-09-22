@@ -34,11 +34,12 @@ def character_attack():
 
 
 while(1):
-    # character_run()
-    # delay(1)
-    # character_slide()
-    # delay(1)
-    # character_jump()
-    # delay(1)
+    character_run()
+
+    delay(1)
+    character_slide()
+    delay(1)
+    character_jump()
+    delay(1)
     character_attack()
     delay(1)
