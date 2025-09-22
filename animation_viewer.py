@@ -10,7 +10,6 @@ top_img = 407 # 이미지의 최대 y좌표
 
 
 def character_run():
-    print("Character Run")
     line = 2
     frame = 0
     for x in range(0, 35, 1):
