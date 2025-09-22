@@ -22,6 +22,8 @@ def character_run():
 
 def character_slide():
     print("Character Slide")
+    line = 4
+    frame = 0
     pass
 
 
