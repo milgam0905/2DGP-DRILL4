@@ -11,6 +11,12 @@ top_img = 407 # 이미지의 최대 y좌표
 
 def character_run():
     print("Character Run")
+    line = 2
+    frame = 0
+    clear_canvas()
+    img.clip_draw(frame * frame_width, top_img - line * frame_height, frame_width, frame_height, 400, 300, 300, 300)
+    update_canvas()
+    delay(0.05)
 
 
 def character_slide():
