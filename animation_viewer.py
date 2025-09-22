@@ -1,3 +1,6 @@
+
+
+#프레임 크기가 프레임마다 달라짐
 from pico2d import *
 
 open_canvas()
