@@ -14,7 +14,7 @@ def draw_frame(frame = 0, line = 0):
         img.clip_draw(frame * frame_width, top_img - line * frame_height, frame_width, frame_height, 400, 300, 300, 300)
         update_canvas()
         frame = (frame + 1) % 7
-        delay(0.05)
+        delay(0.1)
 
 
 def character_run():
@@ -26,13 +26,11 @@ def character_slide():
 
 
 def character_jump():
-    print("Character Jump")
     draw_frame(0,5)
 
 
 def character_attack():
-    print("Character Attack")
-    pass
+    draw_frame(0,8)
 
 
 while(1):
@@ -40,7 +38,7 @@ while(1):
     # delay(1)
     # character_slide()
     # delay(1)
-    character_jump()
-    delay(1)
-    # character_attack()
+    # character_jump()
     # delay(1)
+    character_attack()
+    delay(1)
