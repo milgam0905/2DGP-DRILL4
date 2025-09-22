@@ -5,12 +5,12 @@ img = load_image('skeleton.png')
 # 해당 이미지는 612*576크기
 
 
-def draw_frame(frame = 0, line = 0, frame_width = 0, frame_height = 0, hight = 80, x = 450, y = 300):
+def draw_frame(frame = 0, line = 0, frame_width = 0, frame_height = 0, hight = 80, x = 450, y = 300, x_size = 300, y_size = 300):
     clear_canvas()
-    img.clip_draw(frame, 576 - line * frame_height, frame_width, hight, x, y, 300, 300)
+    img.clip_draw(frame, 576 - line * frame_height, frame_width, hight, x, y, x_size, y_size)
     update_canvas()
     frame = (frame + 1) % 9
-    delay(0.1)
+    delay(2)
 
 def character_walk():
     print("walk")
@@ -40,10 +40,10 @@ def character_attack_1():
 def character_attack_2():
     print("attack2")
     for x in range(0, 5):
-        draw_frame(0, 4,  60, 90)
-        draw_frame(60, 4,  70, 90, 80, 390)
-        draw_frame(130, 4,  90, 90, 110, 390, 330)
-        draw_frame(220, 4,  70, 90, 110, 390, 330)
+        draw_frame(60, 4,  55, 95, 90, 390)
+        draw_frame(115, 4,  80, 95, 115, 390, 300, 360, 360)
+        draw_frame(195, 4,  100, 95, 90, 450, 300)
+        draw_frame(295, 4,  60, 95, 90, 450, 300)
 
 
 def character_die():
