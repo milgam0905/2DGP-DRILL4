@@ -13,10 +13,12 @@ def character_run():
     print("Character Run")
     line = 2
     frame = 0
-    clear_canvas()
-    img.clip_draw(frame * frame_width, top_img - line * frame_height, frame_width, frame_height, 400, 300, 300, 300)
-    update_canvas()
-    delay(0.05)
+    for x in range(0, 35, 1):
+        clear_canvas()
+        img.clip_draw(frame * frame_width, top_img - line * frame_height, frame_width, frame_height, 400, 300, 300, 300)
+        update_canvas()
+        frame = (frame + 1) % 7
+        delay(0.05)
 
 
 def character_slide():
