@@ -39,7 +39,10 @@ def character_attack_1():
 
 def character_attack_2():
     print("attack2")
-    pass
+    img.clip_draw(0, 576 - 5 * 90, 60, 90, 450, 300, 300, 300)
+    img.clip_draw(60, 576 - 5 * 90, 60, 90, 450, 300, 300, 300)
+    img.clip_draw(120, 576 - 5 * 90, 60, 90, 450, 300, 300, 300)
+    img.clip_draw(180, 576 - 5 * 90, 60, 90, 450, 300, 300, 300)
 
 
 def character_die():
