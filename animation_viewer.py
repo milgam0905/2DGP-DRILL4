@@ -27,7 +27,7 @@ def character_slide():
 
 def character_jump():
     print("Character Jump")
-    pass
+    draw_frame(0,5)
 
 
 def character_attack():
@@ -36,11 +36,11 @@ def character_attack():
 
 
 while(1):
-    character_run()
-    delay(1)
-    character_slide()
-    delay(1)
-    # character_jump()
+    # character_run()
     # delay(1)
+    # character_slide()
+    # delay(1)
+    character_jump()
+    delay(1)
     # character_attack()
     # delay(1)
