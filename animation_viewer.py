@@ -2,6 +2,7 @@ from pico2d import *
 
 open_canvas()
 img = load_image('skeleton.png')
+# 해당 이미지는 612*576크기
 
 def character_walk():
 
@@ -25,7 +26,7 @@ def character_die():
 
 
 while(1):
-    img.draw(400, 300)
+    img.clip_draw(0, 576 - 91*2, 50, 100, 400, 300)
     update_canvas()
     delay(1)
     # character_walk()
