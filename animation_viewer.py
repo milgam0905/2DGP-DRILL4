@@ -32,8 +32,8 @@ def character_attack_1():
     for x in range(0, 5):
         draw_frame(0, 3,  60, 90)
         draw_frame(60, 3,  70, 90, 80, 390)
-        draw_frame(130, 3,  90, 90, 110, 390, 330)
-        draw_frame(220, 3,  70, 90, 110, 390, 330)
+        draw_frame(130, 3,  90, 90, 110, 390, 330, 350, 350)
+        draw_frame(220, 3,  70, 90, 110, 390, 330, 320, 320)
         draw_frame(290, 3,  60, 90, 80, 380)
 
 
@@ -57,11 +57,11 @@ def character_die():
 
 
 while(1):
-    character_walk()
-    delay(1)
+    # character_walk()
+    # delay(1)
     character_attack_1()
     delay(1)
-    character_attack_2()
-    delay(1)
-    character_die()
-    delay(1)
+    # character_attack_2()
+    # delay(1)
+    # character_die()
+    # delay(1)
