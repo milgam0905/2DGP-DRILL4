@@ -25,13 +25,13 @@ def character_attak():
 
 
 while(1):
-    img.draw(400, 300)
+    img.clip_draw(0, 407-40, 50, 40, 400, 300, 300, 300)
     update_canvas()
-    character_run()
-    delay(1)
-    character_slide()
-    delay(1)
-    character_jump()
-    delay(1)
-    character_attak()
-    delay(1)
+    # character_run()
+    # delay(1)
+    # character_slide()
+    # delay(1)
+    # character_jump()
+    # delay(1)
+    # character_attak()
+    # delay(1)
