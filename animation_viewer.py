@@ -48,7 +48,13 @@ def character_attack_2():
 
 def character_die():
     print("die")
-    pass
+    for x in range(0, 5):
+        draw_frame(0, 7, 60, 70, 70, 390, 200, 200, 200)
+        draw_frame(60, 7, 60, 70, 70, 390, 200, 200, 200)
+        draw_frame(120, 7, 60, 70, 70, 390, 200, 200, 200)
+        draw_frame(180, 7, 60, 70, 70, 390, 200, 200, 200)
+        draw_frame(240, 7, 60, 70, 70, 390, 200, 200, 200)
+        draw_frame(300, 7, 60, 70, 70, 390, 200, 200, 200)
 
 
 while(1):
@@ -56,7 +62,7 @@ while(1):
     # delay(1)
     # character_attack_1()
     # delay(1)
-    character_attack_2()
-    delay(1)
-    # character_die()
+    # character_attack_2()
     # delay(1)
+    character_die()
+    delay(1)
