@@ -4,18 +4,23 @@ open_canvas()
 img = load_image('skeleton.png')
 
 def character_walk():
+
+    print("walk")
     pass
 
 
 def character_attack_1():
+    print("attack1")
     pass
 
 
 def character_attack_2():
+    print("attack2")
     pass
 
 
 def character_die():
+    print("die")
     pass
 
 
