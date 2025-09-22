@@ -7,7 +7,7 @@ img = load_image('skeleton.png')
 
 def draw_frame(frame = 0, line = 0, length = 0, frame_width = 0, frame_height = 0):
     clear_canvas()
-    img.clip_draw(frame, 576 - line * frame_height, frame_width, 80, 400, 300, 300, 300)
+    img.clip_draw(frame, 576 - line * frame_height, frame_width, 80, 450, 300, 300, 300)
     update_canvas()
     frame = (frame + 1) % 9
     delay(0.1)
