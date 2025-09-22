@@ -4,9 +4,13 @@ open_canvas()
 img = load_image('sprite_sheet_example.png')
 
 
+frame_width = 50  # 프레임 가로 크기
+frame_height = 38  # 프레임 세로 크기
+top_img = 407 # 이미지의 최대 y좌표
+
+
 def character_run():
     print("Character Run")
-    pass
 
 
 def character_slide():
@@ -19,19 +23,17 @@ def character_jump():
     pass
 
 
-def character_attak():
-    print("Character Attak")
+def character_attack():
+    print("Character Attack")
     pass
 
 
 while(1):
-    img.clip_draw(0, 407-40, 50, 40, 400, 300, 300, 300)
-    update_canvas()
-    # character_run()
-    # delay(1)
+    character_run()
+    delay(1)
     # character_slide()
     # delay(1)
     # character_jump()
     # delay(1)
-    # character_attak()
+    # character_attack()
     # delay(1)
