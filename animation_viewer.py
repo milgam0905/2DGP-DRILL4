@@ -7,23 +7,22 @@ img = load_image('skeleton.png')
 
 def draw_frame(frame = 0, line = 0, length = 0, frame_width = 0, frame_height = 0):
     clear_canvas()
-    img.clip_draw(frame, 576 - line * frame_height, frame_width, 100, 400, 300, 300, 300)
+    img.clip_draw(frame, 576 - line * frame_height, frame_width, 80, 400, 300, 300, 300)
     update_canvas()
     frame = (frame + 1) % 9
-    delay(1)
+    delay(0.1)
 
 def character_walk():
     print("walk")
     for x in range(0, 5):
-        draw_frame(0, 2, 9, 68, 91)
-        draw_frame(68, 2, 9, 68, 91)
-        draw_frame(68*2, 2, 9, 68, 91)
-        draw_frame(68*3, 2, 9, 68, 91)
-        draw_frame(68*4, 2, 9, 68, 91)
-        draw_frame(68*5, 2, 9, 68, 91)
-        draw_frame(68*6, 2, 9, 68, 91)
-        draw_frame(68*7, 2, 9, 68, 91)
-        draw_frame(68*8, 2, 9, 68, 91)
+        draw_frame(0, 2, 9, 68, 80)
+        draw_frame(68, 2, 9, 68, 80)
+        draw_frame(68*2+5, 2, 9, 68, 80)
+        draw_frame(68*3+10, 2, 9, 68, 80)
+        draw_frame(68*4+15, 2, 9, 68, 80)
+        draw_frame(68*5+15, 2, 9, 68, 80)
+        draw_frame(68*6+20, 2, 9, 68, 80)
+        draw_frame(68*7+15, 2, 9, 68, 80)
 
 
 
