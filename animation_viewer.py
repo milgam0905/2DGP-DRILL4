@@ -24,6 +24,12 @@ def character_slide():
     print("Character Slide")
     line = 4
     frame = 0
+    for x in range(0, 35, 1):
+        clear_canvas()
+        img.clip_draw(frame * frame_width, top_img - line * frame_height, frame_width, frame_height, 400, 300, 300, 300)
+        update_canvas()
+        frame = (frame + 1) % 7
+        delay(0.05)
     pass
 
 
@@ -38,10 +44,10 @@ def character_attack():
 
 
 while(1):
-    character_run()
-    delay(1)
-    # character_slide()
+    # character_run()
     # delay(1)
+    character_slide()
+    delay(1)
     # character_jump()
     # delay(1)
     # character_attack()
