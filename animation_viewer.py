@@ -10,7 +10,7 @@ def draw_frame(frame = 0, line = 0, frame_width = 0, frame_height = 0, hight = 8
     img.clip_draw(frame, 576 - line * frame_height, frame_width, hight, x, y, x_size, y_size)
     update_canvas()
     frame = (frame + 1) % 9
-    delay(2)
+    delay(1)
 
 def character_walk():
     print("walk")
@@ -41,9 +41,9 @@ def character_attack_2():
     print("attack2")
     for x in range(0, 5):
         draw_frame(60, 4,  55, 95, 90, 390)
-        draw_frame(115, 4,  80, 95, 115, 390, 300, 360, 360)
-        draw_frame(195, 4,  100, 95, 90, 450, 300)
-        draw_frame(295, 4,  60, 95, 90, 450, 300)
+        draw_frame(115, 4,  80, 95, 115, 390, 320, 360, 360)
+        draw_frame(195, 4,  100, 95, 90, 450, 310, 320, 320)
+        draw_frame(295, 4,  60, 95, 90, 450, 310)
 
 
 def character_die():
