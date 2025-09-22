@@ -29,12 +29,11 @@ def character_walk():
 
 def character_attack_1():
     print("attack1")
-    for x in range(0, 5):
-        draw_frame(0, 3,  60, 90)
-        draw_frame(60, 3,  70, 90, 80, 390)
-        draw_frame(130, 3,  90, 90, 110, 390, 330)
-        draw_frame(220, 3,  70, 90, 110, 390, 330)
-        draw_frame(290, 3,  60, 90, 80, 380)
+    img.clip_draw(0, 576 - 3 * 90, 60, 90, 450, 300, 300, 300)
+    img.clip_draw(60, 576 - 3 * 90, 60, 90, 450, 300, 300, 300)
+    img.clip_draw(120, 576 - 3 * 90, 60, 90, 450, 300, 300, 300)
+    img.clip_draw(180, 576 - 3 * 90, 60, 90, 450, 300, 300, 300)
+    img.clip_draw(240, 576 - 3 * 90, 60, 90, 450, 300, 300, 300)
 
 
 def character_attack_2():
